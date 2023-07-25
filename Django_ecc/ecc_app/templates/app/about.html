@@ -1,0 +1,61 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner_slider %}
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static "app/image/banner/b1.jpg" %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "app/image/banner/b2.jpg" %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "app/image/banner/b3.jpg" %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "app/image/banner/b4.jpg" %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+  </div>
+
+{% endblock banner_slider %}
+
+{% block main-content %}
+
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row-container">
+        <p class="fs-4 text-center">
+            This is public limited company having its registered and corporate office at 
+            Bengaluru City of Karnataka state in India. The company was incorporate in the year
+            2018 and production commenced in 2020.
+            This is one of the fastest growing Public listed companies in Bengaluru.
+
+        </p>
+    </div>
+    <br>
+    <br>
+    <h2 class="text-center">Mission</h2>
+    <br>
+    <div class="row-container">
+        <p class="fs-4 text-center">
+        To embrace the right technology to delight our customers
+        Empowering the famer community through our 'Relationship Farming'
+        Model
+        To anticipate, understand and respond to our Customers need by creating high-qulity products
+        and making them available through innovative and convenient channels.
+
+        </p>
+    </div>
+
+
+</div>
+<br>
+<br>
+
+{% endblock main-content %}
